@@ -3,6 +3,6 @@ Repository for all scripts and data to be used for Marine Data Science w/ R cour
 
 Author: Graham C. McLaughlin
 Affiliation: The University of South Carolina Dept. of Biological Sciences
-Project Name: Experimental Reinforcement
+Project Name: Marine Data Science w/ R Course Repository
 Email: grahamcm@email.sc.edu
 Twitter: GrahamMcLaugh18
