@@ -1,0 +1,29 @@
+---
+title: "Homework 1 - MSCI 701"
+author: "Graham C. McLaughlin"
+date: "2023-01-22"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.width=6, fig.asp = 0.618, collapse=TRUE)
+
+```
+
+Below I summarized my sleep schedule to determine if the time I wake up (wake_time variable) and how long it takes me to wake up (measured by num_of_snoozes variable) has an effect the likelihood of me making it to the gym.
+
+```{r data, echo = FALSE, results='asis'}
+my_data <- read.table(file = "hw_1_data.txt", header = TRUE)
+library(knitr)
+kable(my_data, caption = "My Data:")
+```
+
+As it turns out, since I never went to the gym in the last 10 days (except where num_of_gym_trips = 0.5, where I walked to the gym, realized I forgot my headphones, and walked back home), there is no correlation between wake_time or num_of_snoozes and the likelihood of making it to the gym. Summary statistics are summarized below:
+
+```{r summary, echo = TRUE}
+summary(my_data)
+## Mean num_of_snoozes:
+mean(my_data$num_of_snoozes)
+## Mean wake_time:
+mean(my_data$wake_time)
+```
